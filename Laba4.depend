@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1575225824 source:c:\users\lenovo\documents\university\cèÀÎÄ\laba4\main.cpp
+	<iostream>
+	"Tree.h"
+	<windows.h>
+
+1575225824 source:c:\users\lenovo\documents\university\cèÀÎÄ\laba4\src\tree.cpp
+	"Tree.h"
+
+1575223590 c:\users\lenovo\documents\university\cèÀÎÄ\laba4\include\tree.h
+	<iostream>
+	<string>
+	<cmath>
+
