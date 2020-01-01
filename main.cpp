@@ -5,42 +5,42 @@ using namespace std;
 
 int main()
 {
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
+    SetConsoleCP(866);
+    SetConsoleOutputCP(866);
 
     Tree bt;
     int n;
     string str;
     int lvl;
-    cout<<"Введите кол-во узлов в дереве\n";
+    cout<<"Р’РІРµРґРёС‚Рµ РєРѕР»-РІРѕ СѓР·Р»РѕРІ РІ РґРµСЂРµРІРµ\n";
     cin>>lvl;
-    cout<<"Введите узлы дерева:\n";
+    cout<<"Р’РІРµРґРёС‚Рµ СѓР·Р»С‹ РґРµСЂРµРІР°:\n";
     for(int i = 0; i < lvl; i++){
-          cout<<"Текст:";
+          cout<<"РўРµРєСЃС‚:";
           cin>>str;
-          cout<<"Кол-во цифра в тексте:";
+          cout<<"РљРѕР»-РІРѕ С†РёС„СЂР° РІ С‚РµРєСЃС‚Рµ:";
           cin>>n;
         // int n = rand() % 20-10;
-        // string str = "текст";
+        // string str = "С‚РµРєСЃС‚";
 
         bt.addEl(n, str);
 
     }
     cout << endl;
 
-    //вывод дерева
+    //РІС‹РІРѕРґ РґРµСЂРµРІР°
     bt.showtree(lvl);
 
-    //удаление дерева
+    //СѓРґР°Р»РµРЅРёРµ РґРµСЂРµРІР°
     bt.del();
     cout << endl;
     cout << endl;
 
-    //обратный обход
+    //РѕР±СЂР°С‚РЅС‹Р№ РѕР±С…РѕРґ
     bt.showtree1();
 
     cout << endl;
-    cout<<"Кол-во максимумов:";
+    cout<<"РљРѕР»-РІРѕ РјР°РєСЃРёРјСѓРјРѕРІ:";
     cout<<bt.numOfMax();
 
     return 0;
